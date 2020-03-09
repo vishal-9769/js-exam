@@ -9,30 +9,30 @@
 - Write a code to generate JSON data as shown below .
 - Your code should generate data for every possible matrix e.g 2 X 2 , 4 X 4 ,5 X 5 ....(It should be dynamic.)
 
-### Data format for 3 X 3 Matrix :
+### [ EXAMPLE ] Data format for 3 X 3 Matrix :
 
 ```
 {
 
 "nodes": [
 
-{ "data": { "id":  "N0-0" },
+{ "data": { "id": "N0-0" } },
 
-{ "data": { "id":  "N0-1" },
+{ "data": { "id": "N0-1" } },
 
-{ "data": { "id":  "N0-2" },
+{ "data": { "id": "N0-2" } },
 
-{ "data": { "id":  "N1-0" },
+{ "data": { "id": "N1-0" } },
 
-{ "data": { "id":  "N1-1" },
+{ "data": { "id": "N1-1" } },
 
-{ "data": { "id":  "N1-2" },
+{ "data": { "id": "N1-2" } },
 
-{ "data": { "id":  "N2-0" },
+{ "data": { "id": "N2-0" } },
 
-{ "data": { "id":  "N2-1" },
+{ "data": { "id": "N2-1" } },
 
-{ "data": { "id":  "N2-2" }
+{ "data": { "id": "N2-2" } }
 
 ],
 
@@ -100,6 +100,7 @@
 - e.g Edge between N0-0 to N0-1 is :
 - `{ "data": { "id": "0-0E", "source": "N0-0", "target": "N0-1" } }`
 - Here 0-0E is id of edge which should be unique (E is for East , because edge direction is East. you can put anything here.)
-- Number of nodes and edges in N X N matrix should be equal to $N^2$ and $N^2$ _4- (N _ 4) respectively.
+- Number of nodes and edges in N X N matrix should be equal to N^2 and (N^2)x4 - (Nx4) respectively.
+- You can see your generated data inside `/public/js/mapdata.json` file (It'll update automatically when you refresh the page.)
 - Take a pen and paper, scratch your head and do some logical calculation before coding...
 - have fun 😊
