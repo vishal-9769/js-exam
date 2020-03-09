@@ -1,5 +1,108 @@
 
 ## Generate JSON data from square matrix?
 
+##### You have to generate data to display square:
+
+ 
+
+ - As shown below, JSON data contain two array of object NODES and  EDGES.
+ - Every node and edge has unique id field.
+ - Every edge has source and target field.
+ - Source and target fields contain ids of nodes from NODES array.
+ - Write a code to generate JSON data as show below .
+ - Your code should generate data for every possible matrix e.g 2 X 2 , 4 X 4 ,5 X 5 ....(It should be dynamic)
+
+
+ 
+### Data format for 3 X 3 Matrix :
+```
+{
+
+"nodes": [
+
+{ "data": { "id":  "N0-0" },  "selectable":  true,  "grabbable":  true },
+
+{ "data": { "id":  "N0-1" },  "selectable":  true,  "grabbable":  true },
+
+{ "data": { "id":  "N0-2" },  "selectable":  true,  "grabbable":  true },
+
+{ "data": { "id":  "N1-0" },  "selectable":  true,  "grabbable":  true },
+
+{ "data": { "id":  "N1-1" },  "selectable":  true,  "grabbable":  true },
+
+{ "data": { "id":  "N1-2" },  "selectable":  true,  "grabbable":  true },
+
+{ "data": { "id":  "N2-0" },  "selectable":  true,  "grabbable":  true },
+
+{ "data": { "id":  "N2-1" },  "selectable":  true,  "grabbable":  true },
+
+{ "data": { "id":  "N2-2" },  "selectable":  true,  "grabbable":  true }
+
+],
+
+"edges": [
+
+{ "data": { "id":  "0-0E",  "source":  "N0-0",  "target":  "N0-1" } },
+
+{ "data": { "id":  "0-0S",  "source":  "N0-0",  "target":  "N1-0" } },
+
+{ "data": { "id":  "0-2W",  "source":  "N0-2",  "target":  "N0-1" } },
+
+{ "data": { "id":  "0-2S",  "source":  "N0-2",  "target":  "N1-2" } },
+
+{ "data": { "id":  "1-1E",  "source":  "N1-1",  "target":  "N1-2" } },
+
+{ "data": { "id":  "1-1W",  "source":  "N1-1",  "target":  "N1-0" } },
+
+{ "data": { "id":  "1-1S",  "source":  "N1-1",  "target":  "N2-1" } },
+
+{ "data": { "id":  "1-1N",  "source":  "N1-1",  "target":  "N0-1" } },
+
+{ "data": { "id":  "2-0E",  "source":  "N2-0",  "target":  "N2-1" } },
+
+{ "data": { "id":  "2-0N",  "source":  "N2-0",  "target":  "N1-0" } },
+
+{ "data": { "id":  "2-2N",  "source":  "N2-2",  "target":  "N1-2" } },
+
+{ "data": { "id":  "2-2W",  "source":  "N2-2",  "target":  "N2-1" } },
+
+{ "data": { "id":  "0-1E",  "source":  "N0-1",  "target":  "N0-2" } },
+
+{ "data": { "id":  "0-1W",  "source":  "N0-1",  "target":  "N0-0" } },
+
+{ "data": { "id":  "0-1S",  "source":  "N0-1",  "target":  "N1-1" } },
+
+{ "data": { "id":  "1-0E",  "source":  "N1-0",  "target":  "N1-1" } },
+
+{ "data": { "id":  "1-0S",  "source":  "N1-0",  "target":  "N2-0" } },
+
+{ "data": { "id":  "1-0N",  "source":  "N1-0",  "target":  "N0-0" } },
+
+{ "data": { "id":  "1-2W",  "source":  "N1-2",  "target":  "N1-1" } },
+
+{ "data": { "id":  "1-2S",  "source":  "N1-2",  "target":  "N2-2" } },
+
+{ "data": { "id":  "1-2N",  "source":  "N1-2",  "target":  "N0-2" } },
+
+{ "data": { "id":  "2-1E",  "source":  "N2-1",  "target":  "N2-2" } },
+
+{ "data": { "id":  "2-1W",  "source":  "N2-1",  "target":  "N2-0" } },
+
+{ "data": { "id":  "2-1N",  "source":  "N2-1",  "target":  "N1-1" } }
+
+]
+
+}
+```
+
  ![3X3 matrix](https://github.com/KishorRathva/Exam2020/blob/master/public/threeXthree.png)
 
+ ##### hint:
+ 
+ - Generating node array is very easy :).
+ - To generate edges from generated nodes you have to count all the adjacent nodes and their direction 
+ - e.g Edge between N0-0 to N0-1 is  :
+ - ```{ "data": { "id": "0-0E", "source": "N0-0", "target": "N0-1" } }```
+ - Here 0-0E is id of edge which should be unique (E is for East , because  edge direction is East. you can put any thing here . )
+ - Take a pen and paper and do some logical calculation then start coding...
+ - happy coding 😊
