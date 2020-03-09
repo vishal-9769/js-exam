@@ -9,6 +9,7 @@ router.get("/", (req, res) =>
 );
 router.get("/mapdata", async (req, res) => {
   const data =  mapdata.mapdata();
+  console.log(JSON.stringify(data));
   res.send(JSON.stringify(data));
 });
 router.post("/exportdata", (req, res) => {
