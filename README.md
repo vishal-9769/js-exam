@@ -101,6 +101,7 @@
 - `{ "data": { "id": "0-0E", "source": "N0-0", "target": "N0-1" } }`
 - Here 0-0E is id of edge which should be unique (E is for East , because edge direction is East. you can put anything here.)
 - Number of nodes and edges in N X N matrix should be equal to N^2 and (N^2)x4 - (Nx4) respectively.
+- Write your logic inside ```/public/js/matrix.js``` file 
 - You can see your generated data inside `/public/js/mapdata.json` file (It'll update automatically when you refresh the page.)
 - Take a pen and paper, scratch your head and do some logical calculation before coding...
 - have fun 😊
