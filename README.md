@@ -1,8 +1,8 @@
 ## Generate JSON data from square matrix:
  1.  Clone this repository 
- 2.  Redirect to cloned directory using ```cd `` command.
- 3. Run ```npm install ``
- 4. Run ``` npm start ``
+ 2.  Redirect to cloned directory using ```cd ``` command.
+ 3. Run ```npm install ```
+ 4. Run ``` npm start ```
 
 ##### You have to write a script to generate data to display square:
 
