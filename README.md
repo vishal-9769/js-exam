@@ -100,6 +100,7 @@
 ```
 
 ![3X3 matrix](https://github.com/KishorRathva/Exam2020/blob/master/public/threeXthree.png)
+![3X3 matrix](https://github.com/KishorRathva/Exam2020/blob/master/public/exam.png)
 
 ##### hint:
 
