@@ -1,9 +1,17 @@
 ## Generate JSON data from square matrix:
+ 1.  Clone this repository 
+ 2.  Redirect to cloned directory using ```cd `` command.
+ 3. Run ```npm install ``
+ 4. Run ``` npm start ``
 
-##### You have to generate data to display square:
+##### You have to write a script to generate data to display square:
 
 - As shown below, JSON data contains two array of objects NODES and EDGES.
 - Every node and edge has unique id field.
+- Format for Nodeid:
+  id should start from capital N
+  "N0-0" -> first 0 represent the row and second 0 represent the column in the matrix.
+
 - Every edge has source and target field.
 - Source and target fields contain ids of nodes from NODES array.
 - Write a code to generate JSON data as shown below .
@@ -101,7 +109,7 @@
 - `{ "data": { "id": "0-0E", "source": "N0-0", "target": "N0-1" } }`
 - Here 0-0E is id of edge which should be unique (E is for East , because edge direction is East. you can put anything here.)
 - Number of nodes and edges in N X N matrix should be equal to N^2 and (N^2)x4 - (Nx4) respectively.
-- Write your logic inside ```/public/js/matrix.js``` file 
+- Write your logic inside `/public/js/matrix.js` file
 - You can see your generated data inside `/public/js/mapdata.json` file (It'll update automatically when you refresh the page.)
 - Take a pen and paper, scratch your head and do some logical calculation before coding...
 - have fun 😊
